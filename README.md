@@ -25,7 +25,7 @@ pip install dlib
 
  
 ## Data preparation
- 
+ 先自行下载bp4d数据集
  ```
 python Prepare_data.py
 ```

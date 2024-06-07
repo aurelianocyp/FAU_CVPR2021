@@ -2,7 +2,9 @@
 ## download trained models from the link
 ## 
 import cv2
-im = cv2.imread('DATA/inference/face1.png')
+import numpy as np
+
+im = cv2.imread('DATA/face1.png')
 im = np.expand_dims(cv2.resize(im, dsize=(224,224)),axis=0)
 print(im.shape)
 
@@ -15,11 +17,11 @@ mapping_BP4D = {0:'Inner Brow Raiser',1:'Outer Brow Raiser',2:'Brow Lowerer',
                 10:'Lip Tightener',11:'Lip pressor'}
 
 from tensorflow.keras import backend as K
-from keras.layers import *
-from keras.models import Model, load_model
-from keras.optimizers import Adam,RMSprop
-from keras.models import Sequential
-from keras.applications.inception_v3 import InceptionV3
+from tensorflow.keras.layers import *
+from tensorflow.keras.models import Model, load_model
+from tensorflow.keras.optimizers import Adam,RMSprop
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.applications.inception_v3 import InceptionV3
 from keras_pos_embd import TrigPosEmbedding,PositionEmbedding
 from keras_multi_head import MultiHeadAttention
 from transformer import get_encoders,get_decoders

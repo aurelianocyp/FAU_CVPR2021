@@ -327,7 +327,8 @@ def AU_plot_ellipsoid(gray1,au,x,shapes):
 
 
 
-# BP4D 
+# BP4D
+imagelistfile="BP4D_imagelist.txt"
 file = open(imagelistfile, "r")
 content_list = file. readlines()
 
@@ -372,6 +373,7 @@ for foldno in range(3):
                 break
             line=x[sample_idx]
             imname = line.split('.')[0]
+            print(image_folder+line)
             gray = np.load(image_folder+line)
             faces = ddetector(gray)
             if len(faces)>0:
