@@ -106,5 +106,5 @@ model.load_weights('models/Transformer_FAU_fold0.h5')
 y_predict = model.predict(im)
 
 nd = np.where(y_predict[1]>0.5)
-for i in ind[1]:
+for i in nd[1]:
     print(mapping_BP4D[i])
