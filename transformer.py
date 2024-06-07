@@ -5,9 +5,9 @@ from keras_position_wise_feed_forward import FeedForward
 from keras_pos_embd import TrigPosEmbedding
 from keras_embed_sim import EmbeddingRet, EmbeddingSim
 # from .backend import keras
-from keras.layers import Input, Activation, Conv2D,Conv2DTranspose, Flatten, Dense, MaxPooling2D,Multiply,AveragePooling2D, UpSampling2D,BatchNormalization,concatenate,Concatenate,ZeroPadding2D, GlobalAveragePooling2D, Dropout, Add
-from keras.layers import dot, Reshape,RepeatVector, multiply,Lambda,add,Permute
-from keras import backend as K
+from tensorflow.keras.layers import Input, Activation, Conv2D,Conv2DTranspose, Flatten, Dense, MaxPooling2D,Multiply,AveragePooling2D, UpSampling2D,BatchNormalization,concatenate,Concatenate,ZeroPadding2D, GlobalAveragePooling2D, Dropout, Add
+from tensorflow.keras.layers import dot, Reshape,RepeatVector, multiply,Lambda,add,Permute
+from tensorflow.keras import backend as K
 import math
 def gelu(x):
     """An approximation of gelu.
