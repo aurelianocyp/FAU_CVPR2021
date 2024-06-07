@@ -1,0 +1,32 @@
+cyp:
+Cheek raiser
+Lid Tightener
+Upper Lip Raiser
+Lip Corner Puller
+Dimpler
+Lip pressor
+
+lrw:
+Cheek raiser
+Lid Tightener
+Upper Lip Raiser
+Lip Corner Puller
+Dimpler
+Lip pressor
+
+Lyh:
+Cheek raiser
+Lid Tightener
+Upper Lip Raiser
+Lip Corner Puller
+Dimpler
+Lip pressor
+
+zly:`
+Cheek raiser
+Lid Tightener
+Upper Lip Raiser
+Lip Corner Puller
+Dimpler
+Lip pressor
+
