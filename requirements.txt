@@ -3,6 +3,7 @@ imutils
 opencv-python
 h5py==2.10.0
 Keras==2.2.4
+protobuf==3.19.6
 keras-pos-embd
 keras-multi-head
 keras-layer-normalization

@@ -31,7 +31,7 @@ label_folder = '../Prepared_data/data1/labels/'
 import cv2,os
 ddetector = dlib.get_frontal_face_detector()
 # dlib  library path
-dpredictor = dlib.shape_predictor('../dlibFacialLandmarks/facial-landmarks/shape_predictor_68_face_landmarks.dat')
+dpredictor = dlib.shape_predictor('facial-landmarks/shape_predictor_68_face_landmarks.dat')
 
 
 AU_count =12
@@ -177,7 +177,7 @@ def AU_plot_ellipsoid(gray1,au,x,shapes):
         l_x,_ = (shapes[48])
         r_x,_ = (shapes[54])
         _,l_y = (shapes[50])
-        _,r_y = (shapes[63]
+        _,r_y = (shapes[63])
         cv2.ellipse(gray1,(int((l_x+r_x)/2),int((l_y+r_y)/2)),
                     (max(int((r_x-l_x)/2),0),max(int((r_y-l_y)/2),0)),
                     0,0,360,(255,255,255),2)
@@ -299,7 +299,7 @@ def AU_plot_ellipsoid(gray1,au,x,shapes):
         (l_x2,_) = (shapes[42])
         (_,l_y2) = (shapes[44])
         (r_x2,_) = (shapes[45])
-        (_,r_y2) = (shapes[47]
+        (_,r_y2) = (shapes[47])
         cv2.ellipse(gray1,(int((l_x1+r_x1)/2),int((l_y1+r_y1)/2)),
                     (max(int((r_x1-l_x1)/2),0),max(int((r_y1+10-l_y1+10)/2),0)),
                     0,0,360,(255,255,255),2)
